@@ -1,0 +1,17 @@
+<CONFIG>
+	<CONTEXT alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app">
+		<folder name="Task Step 2 Details" description="Task Step 2 Details" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app.details.page" isTaskFolder="false">
+            <page>
+            	<row>
+            		<column>
+            			<formflowprocesstasks___taskstep2overview name="Task View" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app.details.portlet">
+                            <layout name="titlebar" value="false"/>
+                            <layout name="border" value="false"/>            			
+            			</formflowprocesstasks___taskstep2overview> 
+                    </column>
+                </row>
+                <hobos/>
+            </page>
+        </folder>
+    </CONTEXT>
+</CONFIG>

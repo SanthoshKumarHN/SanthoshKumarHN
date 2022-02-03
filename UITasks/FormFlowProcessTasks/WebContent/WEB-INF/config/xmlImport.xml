@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+	<context alias="folder.public">
+		<folder name="Form Flow Tests" description="Tests for task form flow" alias="folder.task.form.flow">
+			<formflowprocesstasks___startloanprocess name="Start Loan Process" description="Start the loan process form flow" alias="start.loan.process"/>
+		</folder>
+	</context>
+</CONFIG>

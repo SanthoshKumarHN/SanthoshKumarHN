@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+	
+<context alias="webm.func.priv.task.engine">
+	<Mode type="sync">
+		<wm_xt_fabricfolder name="Task Step 1 Task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privileges" description="Container with standard task privileges">
+			<wm_xt_fabricfolder name="Tasks Administration">
+				<basic name="Tasks Administration" description="Privilege to administer other people's tasks. This is required in order to be able to access tasks from Task List Management" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.admin" allowEdit="false" />
+				<basic name="Update Task Type" description="Privilege to modify properties of a task type" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.modifytasktype" allowEdit="false" />
+				<basic name="Delete Task Type" description="Privilege to delete a task type" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.deletetasktype" allowEdit="false" />
+				<basic name="Queue New Task Instance" description="Privilege to queue new task of this type" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.queuetask" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Tasks Management">
+				<basic name="View Task Data" description="Privilege to view task business data. This is required in order to be able to search for tasks in the Inbox and Task List Management" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.viewdata" allowEdit="false" />
+				<basic name="View Task Info" description="Privilege to view general task info" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.viewinfo" allowEdit="false" />
+				<basic name="View Task Audit" description="Privilege to view task audit trail" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.viewaudit" allowEdit="false" />
+				<basic name="Complete Task" description="Privilege to complete a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.complete" allowEdit="false" />			
+				<basic name="Cancel Task" description="Privilege to cancel a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.cancel" allowEdit="false" />			
+				<basic name="Suspend Task" description="Privilege to suspend a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.suspend" allowEdit="false" />			
+				<basic name="Resume Task" description="Privilege to resume a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.resume" allowEdit="false" />			
+				<basic name="Delegate Task" description="Privilege to delegate a task to people" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.delegate" allowEdit="false" />			
+				<basic name="Accept Task" description="Privilege to accept/unaccept a task to on behalf of other people" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.accept" allowEdit="false" />			
+				<basic name="Assign Task" description="Privilege to assign the task to people" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.assign" allowEdit="false" />
+				<basic name="Modify Task Data" description="Privilege to modify task business data" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.modifydata" allowEdit="false" />
+				<basic name="Modify Task Info" description="Privilege to modify task general info" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.modifyinfo" allowEdit="false" />
+				<basic name="Subscribe to a Task" description="Privilege to subscribe to task notifications" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.subscribe" allowEdit="false" />
+				<basic name="Rollback Task" description="Privilege to rollback task state from audit trail" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.rollback" allowEdit="false" />
+				<basic name="Delete Task" description="Privilege to delete a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.delete" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Rules Management">
+				<basic name="Create New Rule" description="Privilege to create new task rule" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.createrule" allowEdit="false" />
+				<basic name="Modify Rule" description="Privilege to modify task rule" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.modifyrule" allowEdit="false" />
+				<basic name="Modify Rule Variables" description="Privilege to modify task rule variables only" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.modifyrulevars" allowEdit="false" />
+				<basic name="Delete Rule" description="Privilege to delete a task rule" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.deleterule" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Task Comments" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.comment.privileges">
+				<basic name="View Comments" description="Privilege to view task comments" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.viewcomment" allowEdit="false" />
+				<basic name="Add Comment" description="Privilege to add a new comment to a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.createcomment" allowEdit="false" />
+				<basic name="Update Comment" description="Privilege to update a comment added to a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.updatecomment" allowEdit="false" />
+				<basic name="Update Other People's Comment" description="Privilege to update other people comment added to a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.updateotherpeoplecomment" allowEdit="false" />
+				<basic name="Delete Comments" description="Privilege to delete a comment added to a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.deletecomment" allowEdit="false" />
+				<basic name="Delete Other People's Comment" description="Privilege to delete other people comment added to a task" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.deleteotherpeoplecomment" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Task Collaboration" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.collaboration.privileges">
+				<basic name="View Collaboration Process" description="Privilege to view task collaboration process" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.viewcollaboration" allowEdit="false" />
+				<basic name="Create Collaboration Process" description="Privilege to create new collaboration tasks" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.createcollaboration" allowEdit="false" />
+				<basic name="Update Collaboration Process" description="Privilege to update collaboration process" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.updatecollaboration" allowEdit="false" />
+				<basic name="Delete Collaboration Process" description="Privilege to delete collaboration process" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.deletecollaboration" allowEdit="false" />
+				<basic name="Search User's Collaboration Processes" description="Privilege to search Collaboration Processes user participates with" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.searchusercollaboration" allowEdit="false" />
+				<basic name="Search Other People's Collaboration Processes" description="Privilege to search any collaboration processes" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.privilege.searchallcollaboration" allowEdit="false" />
+			</wm_xt_fabricfolder>
+		</wm_xt_fabricfolder>
+	</Mode>
+</context><context alias="webm.func.priv.task.engine">
+	<Mode type="sync">
+		<wm_xt_fabricfolder name="Task Step 2 Task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privileges" description="Container with standard task privileges">
+			<wm_xt_fabricfolder name="Tasks Administration">
+				<basic name="Tasks Administration" description="Privilege to administer other people's tasks. This is required in order to be able to access tasks from Task List Management" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.admin" allowEdit="false" />
+				<basic name="Update Task Type" description="Privilege to modify properties of a task type" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.modifytasktype" allowEdit="false" />
+				<basic name="Delete Task Type" description="Privilege to delete a task type" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.deletetasktype" allowEdit="false" />
+				<basic name="Queue New Task Instance" description="Privilege to queue new task of this type" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.queuetask" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Tasks Management">
+				<basic name="View Task Data" description="Privilege to view task business data. This is required in order to be able to search for tasks in the Inbox and Task List Management" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.viewdata" allowEdit="false" />
+				<basic name="View Task Info" description="Privilege to view general task info" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.viewinfo" allowEdit="false" />
+				<basic name="View Task Audit" description="Privilege to view task audit trail" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.viewaudit" allowEdit="false" />
+				<basic name="Complete Task" description="Privilege to complete a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.complete" allowEdit="false" />			
+				<basic name="Cancel Task" description="Privilege to cancel a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.cancel" allowEdit="false" />			
+				<basic name="Suspend Task" description="Privilege to suspend a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.suspend" allowEdit="false" />			
+				<basic name="Resume Task" description="Privilege to resume a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.resume" allowEdit="false" />			
+				<basic name="Delegate Task" description="Privilege to delegate a task to people" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.delegate" allowEdit="false" />			
+				<basic name="Accept Task" description="Privilege to accept/unaccept a task to on behalf of other people" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.accept" allowEdit="false" />			
+				<basic name="Assign Task" description="Privilege to assign the task to people" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.assign" allowEdit="false" />
+				<basic name="Modify Task Data" description="Privilege to modify task business data" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.modifydata" allowEdit="false" />
+				<basic name="Modify Task Info" description="Privilege to modify task general info" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.modifyinfo" allowEdit="false" />
+				<basic name="Subscribe to a Task" description="Privilege to subscribe to task notifications" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.subscribe" allowEdit="false" />
+				<basic name="Rollback Task" description="Privilege to rollback task state from audit trail" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.rollback" allowEdit="false" />
+				<basic name="Delete Task" description="Privilege to delete a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.delete" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Rules Management">
+				<basic name="Create New Rule" description="Privilege to create new task rule" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.createrule" allowEdit="false" />
+				<basic name="Modify Rule" description="Privilege to modify task rule" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.modifyrule" allowEdit="false" />
+				<basic name="Modify Rule Variables" description="Privilege to modify task rule variables only" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.modifyrulevars" allowEdit="false" />
+				<basic name="Delete Rule" description="Privilege to delete a task rule" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.deleterule" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Task Comments" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.comment.privileges">
+				<basic name="View Comments" description="Privilege to view task comments" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.viewcomment" allowEdit="false" />
+				<basic name="Add Comment" description="Privilege to add a new comment to a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.createcomment" allowEdit="false" />
+				<basic name="Update Comment" description="Privilege to update a comment added to a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.updatecomment" allowEdit="false" />
+				<basic name="Update Other People's Comment" description="Privilege to update other people comment added to a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.updateotherpeoplecomment" allowEdit="false" />
+				<basic name="Delete Comments" description="Privilege to delete a comment added to a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.deletecomment" allowEdit="false" />
+				<basic name="Delete Other People's Comment" description="Privilege to delete other people comment added to a task" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.deleteotherpeoplecomment" allowEdit="false" />
+			</wm_xt_fabricfolder>
+			<wm_xt_fabricfolder name="Task Collaboration" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.collaboration.privileges">
+				<basic name="View Collaboration Process" description="Privilege to view task collaboration process" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.viewcollaboration" allowEdit="false" />
+				<basic name="Create Collaboration Process" description="Privilege to create new collaboration tasks" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.createcollaboration" allowEdit="false" />
+				<basic name="Update Collaboration Process" description="Privilege to update collaboration process" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.updatecollaboration" allowEdit="false" />
+				<basic name="Delete Collaboration Process" description="Privilege to delete collaboration process" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.deletecollaboration" allowEdit="false" />
+				<basic name="Search User's Collaboration Processes" description="Privilege to search Collaboration Processes user participates with" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.searchusercollaboration" allowEdit="false" />
+				<basic name="Search Other People's Collaboration Processes" description="Privilege to search any collaboration processes" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.privilege.searchallcollaboration" allowEdit="false" />
+			</wm_xt_fabricfolder>
+		</wm_xt_fabricfolder>
+	</Mode>
+</context></CONFIG> 
+ 

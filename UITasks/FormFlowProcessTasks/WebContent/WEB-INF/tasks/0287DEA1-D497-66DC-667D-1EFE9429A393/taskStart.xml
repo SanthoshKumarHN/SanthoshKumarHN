@@ -1,0 +1,19 @@
+<CONFIG>
+	<CONTEXT alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app">
+		<folder name="Task Step 2 Start" description="Task Step 2 Start" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app.start.page" isTaskFolder="false">
+			<Mode type="sync">
+	            <page>
+	            	<row>
+	            		<column>
+	            			<formflowprocesstasks___taskstep2start name="Task Start" alias="0287DEA1-D497-66DC-667D-1EFE9429A393.task.app.start.portlet">
+	                            <layout name="titlebar" value="false"/>
+	                            <layout name="border" value="false"/>            			
+	            			</formflowprocesstasks___taskstep2start>
+	                    </column>
+	                </row>
+	                <hobos/>
+	            </page>
+	        </Mode>
+        </folder>
+    </CONTEXT>
+</CONFIG>

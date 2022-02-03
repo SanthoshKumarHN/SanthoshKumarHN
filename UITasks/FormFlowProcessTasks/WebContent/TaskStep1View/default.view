@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='TaskStep1ViewDefaultviewView' />
+  <property name='preferencesBean' value='TaskStep1View' />
+  <design-time-attribute name='taskTypeID' value='B1FCC27F-5DAA-49F9-3F70-D257C85976B6' />
+  <design-time-attribute name='taskPortletType' value='taskView' />
+  <design-time-attribute name='portlet' value='TaskStep1View' />
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='taskViewForm' />
+    <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='globalOnly' value='true' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertySubGroup'>
+      <property name='id' value='taskDataSubGroup' />
+      <property name='label' value='Loan Step 1' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='LoanNumber' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText' />
+          <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskData.loan.loanNumber}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.toggle.OneWayToggleButton' renderer-type='com.webmethods.caf.faces.toggle.OneWayToggleButton'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='for' value=':taskViewForm:optionalPanel' />
+      <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.toggle.task.info&quot;]}' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.HideablePanel' renderer-type='com.webmethods.caf.faces.panel.HideablePanel'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='id' value='optionalPanel' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertySubGroup'>
+        <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.task.info&quot;]}' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.name&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='nameText' />
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.name}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.description&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='descriptionText' />
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.description}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.created.on&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.createdDate}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputFormat' renderer-type='javax.faces.Format'>
+            <property name='id' value='htmlOutputFormat1' />
+            <property name='style' value='padding-left: 0.5em;&#13;&#10;' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.by&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='value' value='#{TaskStep1ViewDefaultviewView.taskDisplayProvider.createdByDisplayName}' />
+            </control>
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.last.modified&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.lastModifiedDate}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputFormat' renderer-type='javax.faces.Format'>
+            <property name='id' value='htmlOutputFormat2' />
+            <property name='style' value='padding-left:0.5em' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.by&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='value' value='#{TaskStep1ViewDefaultviewView.taskDisplayProvider.lastModifiedDisplayName}' />
+            </control>
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.expires&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.expireDate}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.status&quot;]}' />
+          <control component-type='com.webmethods.caf.faces.select.SelectOneOutput' renderer-type='com.webmethods.caf.faces.select.SelectOneOutput'>
+            <property name='id' value='statusText' />
+            <property name='value' value='#{TaskStep1ViewDefaultviewView.taskStep1.taskInfo.status}' />
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='activeStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.active&quot;]}' />
+              <property name='itemValue' value='active' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='cancelledStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.canceled&quot;]}' />
+              <property name='itemValue' value='cancelled' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='completedStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.completed&quot;]}' />
+              <property name='itemValue' value='completed' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='errorStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.error&quot;]}' />
+              <property name='itemValue' value='error' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='expiredStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.expired&quot;]}' />
+              <property name='itemValue' value='expired' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='suspendedStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.suspended&quot;]}' />
+              <property name='itemValue' value='suspended' />
+            </control>
+          </control>
+        </control>
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertySubmit' renderer-type='com.webmethods.caf.faces.panel.PropertySubmit'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <facet name='submit'>
+        <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+          <property name='action' value='#{TaskStep1ViewDefaultviewView.submitTask}' />
+          <property name='disabled' value='#{not TaskStep1ViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+          <property name='rendered' value='#{TaskStep1ViewDefaultviewView.taskStep1.autoAccept || TaskStep1ViewDefaultviewView.taskStep1.taskInfo.currentUserAccepted}' />
+          <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.submit&quot;]}' />
+        </control>
+      </facet>
+      <facet name='cancel'>
+        <control component-type='javax.faces.HtmlCommandButton' renderer-type='javax.faces.Button'>
+          <property name='action' value='#{TaskStep1ViewDefaultviewView.cancelView}' />
+          <property name='rendered' value='#{not empty activePreferencesBean.finishUrl}}' />
+          <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.return&quot;]}' />
+        </control>
+      </facet>
+      <facet name='previous'>
+        <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+          <property name='action' value='#{TaskStep1ViewDefaultviewView.taskStep1.acceptTask}' />
+          <property name='disabled' value='#{not TaskStep1ViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+          <property name='rendered' value='#{!TaskStep1ViewDefaultviewView.taskStep1.autoAccept &amp;&amp; !TaskStep1ViewDefaultviewView.taskStep1.taskInfo.currentUserAccepted}' />
+          <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.accept&quot;]}' />
+        </control>
+      </facet>
+      <facet name='next'>
+        <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+          <property name='action' value='#{TaskStep1ViewDefaultviewView.taskStep1.unacceptTask}' />
+          <property name='disabled' value='#{not TaskStep1ViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+          <property name='rendered' value='#{!TaskStep1ViewDefaultviewView.taskStep1.autoAccept &amp;&amp; TaskStep1ViewDefaultviewView.taskStep1.taskInfo.currentUserAccepted}' />
+          <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.release&quot;]}' />
+        </control>
+      </facet>
+      <control component-type='javax.faces.HtmlCommandButton' renderer-type='javax.faces.Button'>
+        <property name='action' value='#{TaskStep1ViewDefaultviewView.completeTask}' />
+        <property name='disabled' value='' />
+        <property name='rendered' value='' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.complete&quot;]}' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.toggle.OneWayToggleButton' renderer-type='com.webmethods.caf.faces.toggle.OneWayToggleButton'>
+        <property name='disabled' value='#{not TaskStep1ViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='for' value=':assignToForm:assignedPrincipalPicker' />
+        <property name='id' value='toggleAssignedPrincipalPicker' />
+        <property name='rendered' value='#{TaskStep1ViewDefaultviewView.taskStep1.adhocRouting}' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.assign.users&quot;]}' />
+        <property name='way' value='show' />
+      </control>
+    </control>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='assignToForm' />
+    <property name='rendered' value='#{TaskStep1ViewDefaultviewView.taskStep1.adhocRouting}' />
+    <control component-type='com.softwareag.caf.controls.mwsx.PeoplePickerDialog' renderer-type=''>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='applyButtonAction' value='#{TaskStep1ViewDefaultviewView.assignToPrincipals}' />
+      <property name='groupSearchAllowed' value='false' />
+      <property name='id' value='assignedPrincipalPicker' />
+      <property name='lazy' value='' />
+      <property name='progressDelay' value='' />
+      <property name='refreshOnShow' value='' />
+      <property name='suppressInputs' value='' />
+      <property name='targetValue' value='#{TaskStep1ViewDefaultviewView.principalList}' />
+      <property name='twoPass' value='' />
+      <facet name='popupPanel'>
+        <control component-type='javax.faces.NamingContainer' renderer-type=''>
+          <property name='id' value='assignTargetPickerPopup' />
+          <control component-type='com.webmethods.caf.faces.command.async.Link' renderer-type='com.webmethods.caf.faces.command.async.Link'>
+            <property name='id' value='showAvailability' />
+            <property name='onclick' value='CAF.Popup.hideAll();' />
+            <property name='refresh' value='personCalendarDialog' />
+            <property name='toggle' value='personCalendarDialog' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.show.availability&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='name' value='personURI' />
+              <property name='value' value='#{row.principalURI}' />
+            </control>
+          </control>
+        </control>
+      </facet>
+    </control>
+    <control component-type='com.softwareag.caf.controls.mwsx.PersonCalendarDialog' renderer-type=''>
+      <property name='id' value='personCalendarDialog' />
+      <property name='personURI' value='#{param.personURI}' />
+    </control>
+  </control>
+</view>

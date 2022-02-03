@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='StartLoanProcessDefaultviewView' />
+  <property name='preferencesBean' value='StartLoanProcess' />
+  <design-time-attribute name='portlet' value='StartLoanProcess' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Start Loan Process 2' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup1' />
+        <property name='label' value='Input Parameters' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine' />
+          <property name='label' value='Loan Number' />
+          <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlInputText' />
+            <property name='value' value='#{StartLoanProcessDefaultviewView.startLoanProcess2.parameters.loanNumber}' />
+            <property name='width' value='input20' />
+          </control>
+          <control component-type='javax.faces.HtmlCommandButton' renderer-type='javax.faces.Button'>
+            <property name='action' value='#{StartLoanProcessDefaultviewView.startLoanProcess}' />
+            <property name='id' value='button' />
+            <property name='value' value='Start Single Process' />
+          </control>
+        </control>
+      </control>
+    </control>
+  </control>
+</view>

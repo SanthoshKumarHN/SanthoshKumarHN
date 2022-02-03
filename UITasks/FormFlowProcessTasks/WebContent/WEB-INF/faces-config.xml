@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE faces-config PUBLIC
+    "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+    "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config>
+	<application>
+		<message-bundle>com.webmethods.caf.AppResources</message-bundle>
+		<locale-config>
+			<default-locale>en_US</default-locale>
+		</locale-config>
+	</application>
+
+	<managed-bean>
+		<managed-bean-name>TaskStep1</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskclient.TaskStep1</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<display-name>Task Step 1 Rule Context</display-name>
+		<managed-bean-name>TaskStep1RuleContext</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskclient.TaskStep1RuleContext</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<description>applicationbean</description>
+		<display-name>FormFlowProcessTasks</display-name>
+		<managed-bean-name>FormFlowProcessTasks</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.FormFlowProcessTasks</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep1View</display-name>
+		<managed-bean-name>TaskStep1View</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1view.TaskStep1View</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep1View/default</display-name>
+		<managed-bean-name>TaskStep1ViewDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1view.TaskStep1ViewDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep1View/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep1View/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep1Overview</display-name>
+		<managed-bean-name>TaskStep1Overview</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1overview.TaskStep1Overview</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep1Overview/default</display-name>
+		<managed-bean-name>TaskStep1OverviewDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1overview.TaskStep1OverviewDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep1Overview/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep1Overview/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep1Start</display-name>
+		<managed-bean-name>TaskStep1Start</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1start.TaskStep1Start</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep1Start/default</display-name>
+		<managed-bean-name>TaskStep1StartDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep1start.TaskStep1StartDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep1Start/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep1Start/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>TaskStep2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskclient.TaskStep2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<display-name>Task Step 2 Rule Context</display-name>
+		<managed-bean-name>TaskStep2RuleContext</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskclient.TaskStep2RuleContext</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep2View</display-name>
+		<managed-bean-name>TaskStep2View</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2view.TaskStep2View</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep2View/default</display-name>
+		<managed-bean-name>TaskStep2ViewDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2view.TaskStep2ViewDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep2View/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep2View/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>TaskDisplayProvider</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.faces.data.task.TaskDisplayProvider</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>TaskPriorityMapProvider</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.faces.data.object.TableSelectItemGroupProvider</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep2Overview</display-name>
+		<managed-bean-name>TaskStep2Overview</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2overview.TaskStep2Overview</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep2Overview/default</display-name>
+		<managed-bean-name>TaskStep2OverviewDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2overview.TaskStep2OverviewDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep2Overview/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep2Overview/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>TaskStep2Start</display-name>
+		<managed-bean-name>TaskStep2Start</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2start.TaskStep2Start</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>TaskStep2Start/default</display-name>
+		<managed-bean-name>TaskStep2StartDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.taskstep2start.TaskStep2StartDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/TaskStep2Start/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/TaskStep2Start/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>StartLoanProcess</display-name>
+		<managed-bean-name>StartLoanProcess</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.startloanprocess.StartLoanProcess</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>StartLoanProcess/default</display-name>
+		<managed-bean-name>StartLoanProcessDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.startloanprocess.StartLoanProcessDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/StartLoanProcess/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/StartLoanProcess/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>StartLoanProcess2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.svc.startloanprocess.StartLoanProcess2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean></faces-config>

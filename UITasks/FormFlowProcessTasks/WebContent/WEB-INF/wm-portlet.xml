@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wm-portlet-app version="1.0">
+	<wm-portlet>
+		<portlet-name>TaskStep1View</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>taskID</name>
+				<display-name>Task ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>cancelUrl</name>
+				<display-name>Cancel URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>finishUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>TaskStep1Overview</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>taskID</name>
+				<display-name>Task ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>cancelUrl</name>
+				<display-name>Cancel URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>finishUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>currentTab</name>
+				<display-name>Current Tab</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>TaskStep1Start</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>returnUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>TaskStep2View</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>taskID</name>
+				<display-name>Task ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>cancelUrl</name>
+				<display-name>Cancel URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>finishUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>TaskStep2Overview</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>taskID</name>
+				<display-name>Task ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>cancelUrl</name>
+				<display-name>Cancel URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>finishUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>currentTab</name>
+				<display-name>Current Tab</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>TaskStep2Start</portlet-name>
+		<category>FormFlowProcessTasks</category>
+		<portlet-preferences>
+			<preference>
+				<name>returnUrl</name>
+				<display-name>Finish URL</display-name>
+				<description></description>
+				<scope>content</scope>
+				<hidden>true</hidden>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>StartLoanProcess</portlet-name>
+		<category>FormFlowProcessTasks</category>
+	</wm-portlet></wm-portlet-app>
+

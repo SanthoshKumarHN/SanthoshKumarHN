@@ -1,0 +1,32 @@
+
+<CONFIG depCheck="false">
+	<Mode type="sync">
+	    <!-- Setup distribution rules -->
+	    <CONTEXT alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.routing.rules.storage">
+	    <wm_xt_portalrules name="Administrator" description="" ruleEditingContextURI="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.distrib.rule.editing.context" ruleType="routing">
+	<rule name="Administrator" description="" ruleEditingContextURI="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.distrib.rule.editing.context" ruleType="routing">
+		<condition><boolean constant="true" displayName="boolean" variableInfo.enabled="true" variableInfo.name="true"></boolean></condition>
+		<result><string constant="Administrator" displayName="string" variableInfo.enabled="false"></string></result>
+		<attributes><attribute name="assigneeList">assigneetype.roleuid~&quot;Administrator&quot;~Role UID : Administrator~assigneeLabel=Administrator\,assigneeValue=&quot;Administrator&quot;</attribute><attribute name="conditionJoin">0</attribute><attribute name="taskDefinitionURI">B1FCC27F-5DAA-49F9-3F70-D257C85976B6</attribute><attribute name="origResultText">&quot;Administrator&quot;</attribute><attribute name="conditionType">true</attribute><attribute name="fireOnce">true</attribute><attribute name="conditions"></attribute><attribute name="ruleType">routing</attribute><attribute name="doNotFire">false</attribute><attribute name="distManType">none</attribute><attribute name="origConditionText">true</attribute><attribute name="ruleEditingContextID">task.rule.distribution.context</attribute><attribute name="ruleSet"></attribute></attributes>
+	</rule>
+</wm_xt_portalrules></CONTEXT>
+	
+	    <!-- Setup distribution filters -->
+	    <CONTEXT alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.filter.rules.storage">
+	    </CONTEXT>
+	
+	    <!-- Setup trigger rules -->
+	    <CONTEXT alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.change.rules.storage">
+	    <wm_xt_portalrules name="Queued" description="" ruleEditingContextURI="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.trigger.rule.editing.context" info="1" ruleType="change">
+	<rule name="Queued" description="" ruleEditingContextURI="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.trigger.rule.editing.context" ruleType="change">
+		<condition><and displayName="and"><and displayName="and"><equals displayName="equals"><bindingExpression constant="#{newTask.taskInfo.status}" displayName="bindingExpression" variableInfo.enabled="false"></bindingExpression><string constant="active" displayName="string" variableInfo.enabled="false"></string></equals><equals displayName="equals"><bindingExpression constant="#{oldTask.taskInfo.status}" displayName="bindingExpression" variableInfo.enabled="false"></bindingExpression><string constant="new" displayName="string" variableInfo.enabled="false"></string></equals></and><boolean constant="true" displayName="boolean" variableInfo.enabled="true" variableInfo.name="true"></boolean></and></condition>
+		<result><bindingExpression constant="#{TaskStep1RuleContext.queued}" displayName="bindingExpression" variableInfo.enabled="false"></bindingExpression></result>
+		<attributes><attribute name="ruleType">change</attribute><attribute name="eventTypeConditionsJoin">0</attribute><attribute name="taskDefinitionURI">B1FCC27F-5DAA-49F9-3F70-D257C85976B6</attribute><attribute name="origResultText">#{TaskStep1RuleContext.queued}</attribute><attribute name="origConditionText">(#{newTask.taskInfo.status} == &quot;active&quot; &amp;&amp; #{oldTask.taskInfo.status} == &quot;new&quot;) &amp;&amp; (true)</attribute><attribute name="eventType">task.queued</attribute><attribute name="eventTypeConditions"></attribute><attribute name="actionType">true</attribute><attribute name="ruleEditingContextID">task.rule.trigger.context</attribute><attribute name="ruleSet"></attribute><attribute name="actions">actiontype.invokeservice~#{TaskStep1RuleContext.queued}~Invoke Service &quot;Queued&quot;~value=TaskStep1RuleContext.queued\,original.editor.type=</attribute></attributes>
+	</rule>
+</wm_xt_portalrules></CONTEXT>
+	
+	    <!-- Setup schedule rules -->
+	    <CONTEXT alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.schedule.rules.storage">
+	    </CONTEXT>
+	</Mode>
+</CONFIG>

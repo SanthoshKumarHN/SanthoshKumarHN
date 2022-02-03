@@ -1,0 +1,19 @@
+<CONFIG>
+	<CONTEXT alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.task.app">
+		<folder name="Task Step 1 Start" description="Task Step 1 Start" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.task.app.start.page" isTaskFolder="false">
+			<Mode type="sync">
+	            <page>
+	            	<row>
+	            		<column>
+	            			<formflowprocesstasks___taskstep1start name="Task Start" alias="B1FCC27F-5DAA-49F9-3F70-D257C85976B6.task.app.start.portlet">
+	                            <layout name="titlebar" value="false"/>
+	                            <layout name="border" value="false"/>            			
+	            			</formflowprocesstasks___taskstep1start>
+	                    </column>
+	                </row>
+	                <hobos/>
+	            </page>
+	        </Mode>
+        </folder>
+    </CONTEXT>
+</CONFIG>

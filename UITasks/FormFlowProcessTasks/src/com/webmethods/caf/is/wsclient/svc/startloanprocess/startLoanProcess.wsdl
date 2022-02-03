@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="svc" targetNamespace="http://localhost/"
+			xmlns:tns="http://localhost/"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/svc/startLoanProcess" xmlns:tns="http://localhost/svc/startLoanProcess">
+          <xsd:complexType name="__startLoanProcessInput">
+            <xsd:sequence>
+              <xsd:element name="LoanNumber" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="startLoanProcessInput">
+		<wsdl:part name="LoanNumber" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="startLoanProcessOutput"/>
+	<wsdl:portType name="svcPortType">
+		<wsdl:operation name="startLoanProcess">
+			<wsdl:input message="tns:startLoanProcessInput"/>
+			<wsdl:output message="tns:startLoanProcessOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="svcBinding" type="tns:svcPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="startLoanProcess">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/svc" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/svc" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="svcService">
+		<wsdl:port name="svcPort0" binding="tns:svcBinding">
+			<soap:address location="http://localhost:5555/soap/rpc"/>
+		</wsdl:port>
+	</wsdl:service>
+	</wsdl:definitions>
